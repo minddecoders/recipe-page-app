@@ -1,6 +1,168 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: serif;
+}
 .home{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
+    background-color: pink;
+    padding:  40px 10px;
+    line-height: 1.5; 
+}
+.container{
+    max-width: 720px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
     padding: 20px;
+     margin: 50px auto;
+}
+.container img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.container h3{
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: left;
+}
+.container p{
+    font-size: 15px;
+    text-align: left;
+    padding-top: 10px;
+}
+.preparation{
+    background-color: rgb(247, 239, 242);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    line-height: 1.7;
+   
+}
+.preparation h2{
+    text-align: left;
+    font-size: 17px;
+    color: rgb(199, 63, 108);
+    padding-left: 10px;
+}
+.preparation ul{
+font-size: 15px;
+text-align: left;
+padding-left: 30px;
+
+}
+.preparation ul li{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+    color: black;
+}
+.preparation ul li::marker{
+    color: rgb(240, 42, 108);
+}
+.Ingredients{
+    margin:0%;
+    padding: 20px;
+    border-bottom: 1px solid rgb(223, 219, 219);
+}
+.Ingredients h2{
+    font-size: 25px;
+    padding-top: 10px;
+    color: rgb(141, 8, 52);
+    text-align: left;
+}
+.Ingredients ul{
+    text-align: left;
+    line-height: 2;
+    padding-left: 20px;
+}
+.Ingredients ul li {
+font-size: 14px;
+padding-left: 12px;
+color: black;
+}
+.Ingredients ul li::marker{
+    color: rgb(241, 14, 90);
+}
+.instructions
+{
+    margin:0%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(192, 190, 190);
+}
+.instructions h2{
+     font-size: 25px;
+    padding:  10px;
+    color: rgb(141, 8, 52);
+    text-align: left;
+}
+.instructions ol{
+     text-align: left;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+.instructions ol li{
+    font-size: 14px;
+padding-left: 12px;
+color: black;
+
+}
+.instructions ol li::marker{
+    color: rgb(241, 14, 90);
+    font-weight: bold;
+}
+.Nutrition{
+    margin:0%;
+    padding: 10px;
+}
+.Nutrition h2{
+    font-size: 25px;
+    padding:  5px;
+    color: rgb(141, 8, 52);
+    text-align: left;
+}
+.Nutrition p{
+    padding-left: 8px;
+    font-size: 14px;
+}
+.Nutrition table{
+    width: 100%;
+}
+.Nutrition tr{
+ text-align: left;
+ padding-left: 20px;
+}
+.Nutrition  tr td{
+    font-size: 13px;
+    border-bottom: 1px solid rgb(211, 209, 209);
+    padding: 8px 50px;
+}
+/*make second chile dark pink*/
+.Nutrition tr td:nth-child(2){
+    color: rgb(241, 14, 90);
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .container h3{
+        font-size: 20px;
+    }
+    .container p{
+        font-size: 12px;
+    }
+    .preparation h2, .Ingredients h2, .instructions h2, .Nutrition h2{
+        font-size: 18px;
+    }
+    .preparation ul li, .Ingredients ul li, .instructions ol li, .Nutrition p{
+        font-size: 12px;
+    }  
 }

@@ -1,11 +1,65 @@
 import style from './home.module.css';
+import image from "../assets/image.png";
 function Home() {
   return (
     <div className={style.home}>
-      <h1>Welcome to the Recipe App!</h1>
-      <p>Discover delicious recipes and share your own culinary creations with our vibrant community of food enthusiasts.</p>
-      <p>Whether you're a seasoned chef or just starting out, our app has something for everyone. Explore a wide variety of recipes, from quick and easy meals to gourmet dishes, all at your fingertips.</p>
-      <p>Join us today and start cooking up a storm!</p>
+     <div className={style.container}> 
+      <img src={image} alt="recipi-image" />
+      <h3>Simple Omelette Recipe</h3>
+      <p>
+An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+     <div className={style.preparation}>
+      <h2>Preparation time:</h2>
+      <ul> 
+        <li><strong>Total</strong>: Approximately 10 minutes</li>
+        <li> <strong>Preparation:</strong>5 minutes</li>
+        <li><strong>Cooking:</strong> 5 minutes</li>
+      </ul>
+     </div>
+     <section className={style.Ingredients}>
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+     </section>
+     <section className={style.instructions}>
+      <h2>Instructions</h2>
+      <ol>
+        <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+                <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+                <li><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+                <li><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+                <li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+                <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+     </section>
+     <section className={style.Nutrition}>
+      <h2>Nutrition</h2>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <table>
+<tr>
+                    <td>Calories</td>
+                    <td class="stat">277kcal</td>
+                </tr>
+                <tr>
+                    <td>Carbs</td>
+                    <td class="stat">0g</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td class="stat">20g</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td class="stat">22g</td>
+                </tr>
+      </table>
+     </section>
+     </div>
     </div>
   );
 }
